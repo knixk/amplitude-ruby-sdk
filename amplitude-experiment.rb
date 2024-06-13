@@ -10,7 +10,8 @@ user = AmplitudeExperiment::User.new(
   user_properties: {
     'premium' => true
   }
-)
+)   
+
 variants = experiment.fetch(user)
 
 # (3) Access a flag's variant
