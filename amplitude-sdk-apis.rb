@@ -1,5 +1,9 @@
+# I believe this is the custom api Richy was talking about
+
+require 'amplitude-api'
+
 # Configure your Amplitude API key
-AmplitudeAPI.config.api_key = "abcdef123456"
+AmplitudeAPI.config.api_key = "3039be907323ee474d06f29b807263f0"
 
 event = AmplitudeAPI::Event.new({
   user_id: "12345",
@@ -11,4 +15,8 @@ event = AmplitudeAPI::Event.new({
     arbitrary: "properties"
   }
 })
+
+print(AmplitudeAPI)
+
 AmplitudeAPI.track(event)
+

@@ -1,3 +1,5 @@
+# Official amplitude experiment implementation
+
 require 'amplitude-experiment'
 
 # (1) Initialize the experiment client
